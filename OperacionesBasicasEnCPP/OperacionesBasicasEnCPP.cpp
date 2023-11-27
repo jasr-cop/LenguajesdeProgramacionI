@@ -8,7 +8,7 @@
 int main() 
 {
     std::locale::global(std::locale("es_MX.UTF8"));
-    setlocale(LC_ALL, "spanish");
+    setlocale(LC_ALL, "es_MX.UTF8");
 
     double dNum1 = 0.0;
     double dNum2 = 0.0;
