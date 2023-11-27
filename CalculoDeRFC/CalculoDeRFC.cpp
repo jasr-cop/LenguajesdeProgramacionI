@@ -14,6 +14,8 @@ int main()
     std::string sFechaNacimiento;
     bool bRet = false;
 
+    CEmpleado objEmpleado;
+
     while (sNombre.empty())
     {
         std::cout << "Favor de capturar el nombre: ";
@@ -32,8 +34,6 @@ int main()
         std::getline(std::cin, sApellidoMaterno);
     }
 
-    CEmpleado objEmpleado;
-    
     while (sFechaNacimiento.empty())
     {
         std::cout << "Favor de capturar la fecha de nacimiento con el siguiente formato (DD-MM-YYYY): ";
