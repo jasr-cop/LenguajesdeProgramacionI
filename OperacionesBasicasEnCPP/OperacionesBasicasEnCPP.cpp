@@ -14,10 +14,20 @@ int main()
     double dNum2 = 0.0;
 
     std::cout << "Escribe el primer número: ";
-    std::cin >> dNum1;
+    while (!(std::cin >> dNum1)) 
+    {
+        std::cout << "Por favor, ingresa un número válido: ";
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
 
     std::cout << "Escribe el segundo número: ";
-    std::cin >> dNum2;
+    while (!(std::cin >> dNum2)) 
+    {
+        std::cout << "Por favor, ingresa un número válido: ";
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
 
     std::cout << std::fixed << std::setprecision(6);
     std::cout << "La suma es: " << dNum1 + dNum2 << std::endl;
