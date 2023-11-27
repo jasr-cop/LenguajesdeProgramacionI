@@ -13,10 +13,10 @@ int main()
     double dNum1 = 0.0;
     double dNum2 = 0.0;
 
-    std::cout << "Introduce el valor del primer número: ";
+    std::cout << "Escribe el primer número: ";
     std::cin >> dNum1;
 
-    std::cout << "Introduce el valor del segundo número: ";
+    std::cout << "Escribe el segundo número: ";
     std::cin >> dNum2;
 
     std::cout << std::fixed << std::setprecision(6);
